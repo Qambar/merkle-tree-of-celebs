@@ -1,0 +1,95 @@
+# Merkle Tree of Celebrities
+
+This is a short code demo of how you can generate a merkle tree and get the root node.
+
+# Usage
+
+1. Clone this repo git@github.com:Qambar/merkle-tree-of-celebs.git
+
+2. Install the dependencies
+
+```
+npm install
+```
+
+3. Run to generate the merkle tree
+
+```
+node index.js
+```
+
+# Output
+
+```
+$ node index.js
+└─ 01a0232621adf2d287203eaac524bc460a24d9a246f5c1591a03e96dacd8b6ec
+   ├─ 103cadd7118081cf320ec7f3532e25081a31a76984c67f0633ef3c59ea7ae96a
+   │  ├─ 4d01d22877ac6abb6d6d05ffbbfd2c9adb9181fef447762f12b680d68bdf3e27
+   │  │  ├─ 91198cf3532951932e6109ab1e4bca0dd0ec7d3b055b855b946457ae2bd72a91
+   │  │  │  ├─ 0516e28d683797a054f49cbe5619edf92f480faa94723ce8a50c9f2b490a9788
+   │  │  │  │  ├─ 61125be254e8002c58aa2fa647f90426e7ee247d98968c611bfe846cf2f5451b
+   │  │  │  │  │  ├─ acd229f74540a34dc9a0bebadb4dda9e0e9ab53ca57d5e3f411ae40a11750d34
+   │  │  │  │  │  └─ 67fcd2489de3cad4c4be15c58ca60f0df94323e882d5e4483778331ff0e1c766
+   │  │  │  │  └─ 03c8e8aff978be5a5854138eeb25a66f23b677a513157814d808f2ad570b87d9
+   │  │  │  │     ├─ 832e444d37be9553c64105726d443121743ef83595881a563db5cfb15a520583
+   │  │  │  │     └─ e1caed9ee4953f5969218546d7109cae7928796b5a43f7ac71d51fbbce68d540
+   │  │  │  └─ 951f0ee60ee5a6a43294d625c9f98ee2ea1a7eb7f4db56f13249e4feec51298a
+   │  │  │     ├─ 9be507629ef39751047be3522886791ee76620fa4d29b1b2cada2a357e239a74
+   │  │  │     │  ├─ 96d0df5baaf47e6c841891b89c85c22f82a4744628b113647b26d5f6c1caf225
+   │  │  │     │  └─ 56439e28b38e6e73cd04ba7be8eb3a22ddc60a61d982856aace3f71db8b4ed4b
+   │  │  │     └─ 18fa8084de63e4095e9a6a22943c7412b675fe7227c62407f87243137a60b0fe
+   │  │  │        ├─ 0a5133128eab4ab0d5652959ce5bf63ba764b946192ec60cd32ae2cc92285cd4
+   │  │  │        └─ cd5cb233ef915ba46298dc7b69ff10de69ff002de8f93ce278c48958ce2a8759
+   │  │  └─ 3bae2101fdbb1b50bfbbe73e85a810b8fc2ad7ed21b847b6ba862bcca630fee7
+   │  │     ├─ 7b86cd060ff19a15c9aa1f18364ef5b81d2575275d3740aca32f9157bb0ad3ee
+   │  │     │  ├─ 226d8c82174f5c445a12891c302875f2e8d187ba41d83d6dec84761a9b8b34dd
+   │  │     │  │  ├─ f6d054794ec10118891d79d357d342a31b90a4accd2a31f92c0531c891064837
+   │  │     │  │  └─ c70e2ee686be756cacd2d09da5010025a346f302c1dd391df4f296f5bb00d8d1
+   │  │     │  └─ b64ba2fa47620928cb9657fea9b0cdf31140df2f3fd2a455dac825b6312205fb
+   │  │     │     ├─ 4cb941c16fdfcb436b97ab22c534faf68cedaa2dc42834df094dc702c438b234
+   │  │     │     └─ 6743bd84a2a3f3efb718995e715a29fd45e1a64cc3fba9ade20d2d4fa0ffdbd1
+   │  │     └─ e4a219bdb47b699f1fd81d17553d5e2d95c003fb84ef02269cd9a16ea04ae263
+   │  │        ├─ 5961fb560cf0c90393af9652fc217b1e607c3a3031575737ec1d2170de3594fb
+   │  │        │  ├─ ce1204ffa84007246b3cdf5e4c5a832dd25dab7f50c5ba522a17a2f8313aad6d
+   │  │        │  └─ 6c7157c5177fc9cb2f200e7e0d7b813dfa9dcea450dff0ec55a98cd0a453b795
+   │  │        └─ 0cdc09e6a785fb21b534c723cbdb563a7075c544c7b14e7ee8d66f6d063d6f08
+   │  │           ├─ d086c7af68e5d96b77f8d6f19069ecb0377ced17990049e2068d54aafe12bce9
+   │  │           └─ ffbe20289e821787b9edb74d985eaa6815b262ff2694aa528a136fa9d60e7d10
+   │  └─ ff301ec3bbacce1d059f596831cbc119cdcdbbf6da4585dc63c9d36fc6ec757b
+   │     ├─ 95cab1224f1b450423e8519ed3f30c18bb3a5562d970adbd6fd5728de8f5563d
+   │     │  ├─ 0e644d3c25a5c381286e5520b44637aa72001ed0314de4504662baf0b78382f5
+   │     │  │  ├─ d4de155ee0c1c76b48c4cd9b5c50758b0d6cf78e211e13e2fd7ef1bf99eda23f
+   │     │  │  │  ├─ 19b0b26d8e8878d89951f0c3d0e901946a66a3a13a90d6f6aeb7972c6c96a5ad
+   │     │  │  │  └─ d1c72d35f7ad78970475407d77f7ccae0a33eb6dedac14974e5fd65c45682b5e
+   │     │  │  └─ 94f427fe1e1de1890f9a684c3dd8688323bcdd1d580291a225c6cebefad80c17
+   │     │  │     ├─ 7e340cf17fed507ff066d22073c82b49c720b25a16838f09bc3af5abbde3b959
+   │     │  │     └─ 83cb07c62b345d45eb0c54e70a7410e659f2ab8537676e512f1c641125011aa9
+   │     │  └─ 248f35cf3b78f835fc2d8fede0ebd4190220f84c66540c8ce249b4afbffbb987
+   │     │     ├─ cda4e5cfce6e93a5ef6cd15c4e3d74bb95b2520fa8d49a526e4f28acd3fe5048
+   │     │     │  ├─ d462ef4e8e788899b8682a9bcd149fba7ab105becb31c49df1448100ff533361
+   │     │     │  └─ ef8de62a28ed13ba3db9f31ef480ea2b8a5123bf7b7e2843ddf856438d7d54f9
+   │     │     └─ fd228493f1c662e0efd5af6e8c285ddd6662ca66519c063a519a9687249ea5b6
+   │     │        ├─ 308dc1d7534c71dcd4f271ce06e6f9b47827d62ad5284eb598cbdcfe0a82063d
+   │     │        └─ c3a344c37a623c8a516dc523673a9c665071c93ca97cbbd0660c8c9601a3cc05
+   │     └─ 9a07df5bb4467c587a3d71453c7c16f8cf925d0cfc3ba250382ccdbcc25681ef
+   │        ├─ a646be72faacd83d67c62670dceeebdfbbede8d90495e2471b377a7c9ae6dea8
+   │        │  ├─ c5653e333000be4ae0094a062bd7509f8a936ac3537742b4ae02c9c930a395a8
+   │        │  │  ├─ cb46c5e4114e1dc54e235cc2278ff29ed78c0b080ac6ce63490aee4bfbcff914
+   │        │  │  └─ 8f389d1c21af5b2939db8606424075baf5b2e5fa97060623865342c306154a91
+   │        │  └─ fe8b19132a3caa4725f4ed385c1bf97d984757156dfa26c34596842c2bd5abbf
+   │        │     ├─ 0959ca1c1964a3cb872cf0330565e3970f7cfa81c68ee974e2b2f67bef3e784a
+   │        │     └─ 8546213983920682ca26075fb352cc8b354a9b49b2c99b11df40c022e990de23
+   │        └─ 150c2289eea15f4c3ca6a40aeddeb491320f372319e0b8200035f6140184ec17
+   │           ├─ a38f8ed61df6c74877bb8a16216b3af421ac75545cac6afc81e6c98c9ada3a37
+   │           │  ├─ 5ffc79215eaff8677d738074d7a78292da46549b6bca4521e4b0a602a52edfe3
+   │           │  └─ 7c72ece350fb95313f528ef830c3a96a1d65229e708294c2d16defb1253d96b4
+   │           └─ 4dee397ce0f5fb909f5d5c36a34f0641e4c8182034a265b30f82d3a103bb79cf
+   │              ├─ 6375ed158c4a9e092b36e1c4f49164ca78324870f06d4a3376cf75cf6d6902dd
+   │              └─ 48e51559b61bc93e652282f8f74cd931d01269849df4bdbd02e5f3f6d69292a2
+   └─ c14a026bf4e63f78957b44502972c4df2fedb39e30482c72b8c4058a4dd1aa40
+      └─ c14a026bf4e63f78957b44502972c4df2fedb39e30482c72b8c4058a4dd1aa40
+         └─ c14a026bf4e63f78957b44502972c4df2fedb39e30482c72b8c4058a4dd1aa40
+            └─ c14a026bf4e63f78957b44502972c4df2fedb39e30482c72b8c4058a4dd1aa40
+               └─ c14a026bf4e63f78957b44502972c4df2fedb39e30482c72b8c4058a4dd1aa40
+                  └─ c14a026bf4e63f78957b44502972c4df2fedb39e30482c72b8c4058a4dd1aa40
+```
